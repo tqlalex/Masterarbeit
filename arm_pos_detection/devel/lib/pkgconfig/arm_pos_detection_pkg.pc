@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ros_ws/arm_pos_detection/devel
+
+Name: arm_pos_detection_pkg
+Description: Description of arm_pos_detection_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs

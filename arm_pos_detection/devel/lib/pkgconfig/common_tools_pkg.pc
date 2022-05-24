@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ros_ws/arm_pos_detection/devel
+
+Name: common_tools_pkg
+Description: Description of common_tools_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

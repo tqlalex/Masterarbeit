@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node name="BTReader" pkg="arm_pos_detection_pkg" type="BTReader.py" output="screen"/>
+  <node name="BTListener" pkg="arm_pos_detection_pkg" type="BTListener.py" output="screen"/>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find arm_pos_detection_pkg)robot_discription_dir/model/shoulder_and_elbow_ENU.urdf.xacro'"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="rviz" pkg="rviz" type="rviz"/>
+</launch>

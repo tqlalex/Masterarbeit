@@ -1,0 +1,2 @@
+arm_pos_detection_pkg:common_tools_pkg
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/ros_ws/arm_pos_detection/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_ws/arm_pos_detection/install -G Unix Makefiles

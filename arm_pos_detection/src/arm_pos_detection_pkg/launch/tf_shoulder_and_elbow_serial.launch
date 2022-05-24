@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node name="SerialReader" pkg="tf_versuch_pkg" type="SerialReader" output="screen"/>
+  <node name="SerialListener" pkg="tf_versuch_pkg" type="SerialListener.py" output="screen"/>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find tf_versuch_pkg)robot_discription_dir/model/shoulder_and_elbow_ENU.urdf.xacro'"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="rviz" pkg="rviz" type="rviz"/>
+</launch>
